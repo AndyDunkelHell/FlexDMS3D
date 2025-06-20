@@ -2,6 +2,8 @@
 
 This repository contains the design files, software, and documentation for a project focused on developing flexible strain gauge sensors using 3D printed conductive filaments. The project aims to create customizable sensors for soft robotic applications, complete with a custom PCB for signal conditioning and data acquisition.
 
+![Wheatstone Bridge Diagram](img/FlexDMS3D.gif)
+
 ## Table of Contents
 1.  [Project Overview](#1-project-overview)
 2.  [Theoretical Background](#2-theoretical-background)
