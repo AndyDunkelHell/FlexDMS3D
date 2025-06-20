@@ -212,3 +212,26 @@ This project successfully demonstrated the potential of using 3D printed conduct
   through serial !connect (the ending needs to be \r) or similar commands.
   * `FlexDMS3D_Arduino/Python/CorrelationR_Deg.py`: The Python script for processing the raw data, performing the correlation, and generating the prediction models.
 Other python scripts are also available for different tests. (Statistical and plotting)
+
+
+## 8. References
+
+1.	Dally, J.W., & Riley, W.F. (1991). Experimental Stress Analysis (4th ed.). McGraw-Hill. 
+2.	Lee, C., Yoo, J., & Kim, S. (2017). "Flexible and Stretchable Strain Sensors Based on Electrically Conductive Elastomers." Advanced Materials, 29(18), 1606679.
+3.	Kester, W. (1999). Practical Design Techniques for Sensor Signal Conditioning – Section 2: Bridge Circuits. Analog Devices. Retrieved from https://www.analog.com/media/en/training-seminars/design-handbooks/Practical-Design-Techniques-Sensor-Signal/Section2.PDF. 
+4.	Truby, R. L., & Lewis, J. A. (2016). "Printing soft matter in three dimensions." Nature, 540(7633), 371-378. 
+5.	Ko, Y. D., & Kang, T. G. (2018). "Numerical simulation and experimental verification of flexible strain sensors." Sensors and Actuators A: Physical, 274, 155-163.
+6.	Zhang, Y., & Zhao, X. (2022). "3D Printed Strain Sensors for Soft Robotics." Journal of Applied Polymer Science, 139(8), 51587. 
+7.	Research Article in Robotics (2023). Robotics, 13(1), 103. 
+8.	M. Shimojo, A. Namiki, M. Ishikawa, R. Makino, K. Mabuchi, "IEEE Sens. J. 2004, 4, 589."
+9.	Analog Devices. (2023). MAX4208AUA+ Datasheet: Precision, Low-Offset, Low-Drift, Micropower, Rail-to-Rail Instrumentation Amplifier. Maxim Integrated (Analog Devices). Retrieved from https://www.analog.com/media/en/technical-documentation/data-sheets/MAX4208-MAX4209.pdf.D. Kim, N. Lu, R. Ghaffari, et al., "Nat. Mater. 2011, 10, 316."
+10.	Cimbala, J. M. (2014, September 17). Taguchi Orthogonal Arrays. Penn State University. Retrieved July 1, 2024, from https://www.me.psu.edu/cimbala/me345/Lectures/Taguchi_orthogonal_arrays.pdf
+11.	Beckwith, T. G. (1982). Mechanical Measurements (3d ed). Addison-Wesley Pub. Co
+12.	Qi, H., & Boyce, M. (2004). Stress–strain behavior of thermoplastic polyurethanes. Mechanics of Materials, 37(8), 817–839. https://doi.org/10.1016/j.mechmat.2004.08.001 
+13.	Chambers, D. (2017). Digital image correlation: Advanced Methods and Applications.
+14.	Virtanen, P., Gommers, R., Oliphant, T. E., Haberland, M., Reddy, T., Cournapeau, D., & SciPy Contributors. (2020). "SciPy Signal Processing: scipy.signal.detrend." SciPy v1.8.0 Reference Guide. Retrieved from https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.detrend.html.
+15.	Wevolver. (2021). "Comparison of PLA, ABS, and PETG Filaments for 3D Printing." Wevolver Technical Articles. Retrieved from https://www.wevolver.com/article/comparison-of-pla-abs-and-petg-filaments-for-3d-printing. 
+16.	Nasser, N., & Eshraghi, S. (2019). "Mechanical Properties of 3D Printed Polymers and Their Composites." Polymers, 11(12), 2056. DOI: 10.3390/polym11122056. Retrieved from https://pmc.ncbi.nlm.nih.gov/articles/PMC6926899. 
+17.	Toner Plastics. (2023). "Tensile Testing Results of Toner Plastics 3D Filament." Toner Plastics Technical Reports. Retrieved from https://tonerplastics.com/tesile-testing-results-of-toner-plastics-3d-filament/. 
+18.	 Costa, A. R. M., Luna, C. B. B., Nascimento, E. P., Ferreira, E. S. B., Costa, C. M., & Almeida, Y. M. B. (2023). "Tailoring PLA/ABS Blends Compatibilized with SEBS-g-MA through Annealing Heat Treatment." Polymers, 15(16), 3434. DOI: 10.3390/polym15163434. 
+19.	 Hampel, F. R. (2001). Robust statistics: A brief introduction and overview. In Research Report/Seminar für Statistik, Eidgenössische Technische Hochschule (ETH) (Vol. 94). Seminar für Statistik, Eidgenössische Technische Hochschule.
