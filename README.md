@@ -67,6 +67,8 @@ Their conductivity arises from the network of conductive particles. When the mat
 
 To measure the small changes in resistance from the strain gauge accurately, a **Wheatstone bridge** circuit is used.
 
+![Wheatstone Bridge Diagram](img/Picture1.png)
+
 The bridge consists of four resistors. The strain gauge ($R_{sensor}$) is placed as one of these resistors. The output voltage ($V_O$) is given by:
 
 $V_O = (\frac{R_2}{R_1 + R_2} - \frac{R_{sensor}}{R_3 + R_{sensor}}) \cdot V_{in}$
@@ -84,6 +86,8 @@ Key advantages of using a Wheatstone bridge are:
 
 The goal was to create a sensor with a nominal resistance of approximately **43 kΩ** to match the other resistors in the Wheatstone bridge. After numerous iterations, a final serpentine geometry was developed.
 
+![Final Sensor Design](img/Picture2.png)
+
 **Design Choices and Rationale:**
 * **Serpentine Pattern:** This layout distributes bending stress across multiple segments instead of concentrating it in one location. This significantly improves the sensor's durability and the consistency of its resistance measurements during repeated bending cycles compared to a simple rectangular design.
 * **Thickness:** A thickness of 1 mm was found to be the practical minimum. Thinner designs were less reliable and more prone to measurement drift.
@@ -92,6 +96,8 @@ The goal was to create a sensor with a nominal resistance of approximately **43 
 ### 3.2 Custom PCB Design
 
 A custom PCB was designed in Altium Designer to amplify and condition the signal from the Wheatstone bridge.
+
+![Final PCB](img/Picture6.png)
 
 **Key Components and Features:**
 * **Wheatstone Bridge:** The board includes three high-precision **RG2012P-433-B-T1** resistors (43 kΩ) to form the bridge with the external 3D printed sensor.
@@ -115,6 +121,8 @@ The data acquisition system is orchestrated as follows:
 ### 4.2 Bending Angle Calculation
 
 To create a correlation model, the electrical data needed to be mapped to a physical ground truth. The sensor's bending angle ($\theta$) was calculated from top-down video recordings of the sensor bending.
+
+![Angle Calculation Diagram](img/Picture7.png)
 
 Assuming the bend forms an isosceles triangle, the angle is calculated using trigonometry:
 * A base of known length ($l_{tot}$) is established.
@@ -162,11 +170,17 @@ Despite these issues, the final assembled board successfully amplified the senso
 * **Long Relaxation Time:** A significant drawback is the sensor's long resistance relaxation time. After being deformed, the sensor did not fully return to its baseline resistance, even after three minutes. This indicates a material memory effect.
 * **Variability:** Sensors printed under identical conditions showed significant variation in their baseline resistance (from 30 kΩ to 43 kΩ). Normalization was crucial to handle this.
 
+![Resistance in kOhms vs time in different tests with different sensors (a-c)](img/Picture3.png)
+
 ### 5.3 Correlation and Prediction
 
 The data processing pipeline was highly effective.
 * **Hysteresis Compensation:** Creating separate models for upsweep (with detrending) and downsweep movements successfully accounted for the hysteresis.
 * **Accurate Prediction:** The final smoothed predictions closely matched the actual measured angle values, with a low Mean Squared Error (MSE). The `upsweep` model had an average MSE of **0.00178** and the `downsweep` model had an average MSE of **0.00073**. This confirms the robustness of the correlation approach across different sensors and movement patterns.
+
+![ Correlation results Detrend (a,c) vs Normalized resistance (b,d) in the up-sweep and down-sweep movements](img/Picture4.png)
+![Angle Predictions over Time, (a) without rolling smoothing, with smoothing (b-d) for the corresponding sensors on Fig 12 (b-d). The real Angle values derived from top-view video are shown in blue.](img/Picture5.png)
+
 
 ---
 
