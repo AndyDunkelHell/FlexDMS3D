@@ -1,0 +1,24 @@
+Altium Designer Pick and Place Locations
+C:\Users\Public\Documents\Altium\PortentaControlBoard\Project Outputs for PortentaControlBoard\Pick Place for WhearstoneBridge.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       27/11/24
+Time:       22:05
+Revision:   6815a7c26c7eabfff473941b77da6338f73bb27e
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"R4","RG2012P-433-B-T1","TopLayer","RESC2013X50X40LL20T20","3230.000","3330.000","90",""
+"R6","RG2012P-433-B-T1","TopLayer","RESC2013X50X40LL20T20","3245.000","2990.000","0",""
+"J1","691103110002","TopLayer","691103110002","3216.102","3600.000","180",""
+"P1","61300311021","TopLayer","61300311021","3215.000","2915.000","0",""
+"U1","MAX4208AUA+","TopLayer","FP-U8-1-IPC_B","3155.000","3200.000","0","IC INST AMP 1 CIRCUIT 8UMAX"
+"R7","RG2012P-433-B-T1","TopLayer","RESC2013X50X40LL20T20","3120.000","2990.000","0",""
+"C2","08051C104K4T2A","TopLayer","FP-0805-L_2_01_0_2-W_1_25-IPC_B","3263.276","3070.000","180","Automotive Ceramic Capacitor, 0805, 100nF, 10%, X7R, 15%, 100V"
+"C1","1206GC102KAT1A","TopLayer","AVX-1206-2_L","3360.000","3195.000","270","Chip Capacitor, 1 nF, +/- 10%, -55 to 125 degC, 1206 (3216 Metric), RoHS, Tape and Reel"
+"R2","RG2012P-433-B-T1","TopLayer","RESC2013X50X40LL20T20","3325.000","3330.512","90",""
+"R3","RG2012P-433-B-T1","TopLayer","RESC2013X50X40LL20T20","3115.000","3330.000","270",""
+"R5","RG1608P-102-B-T5","TopLayer","FP-RG1608-MFG","3120.000","3070.000","0","Automotive Metal Thin Film Chip Resistor, 0603, 1kO, 0.1%, 25ppm/°C, 0.1W, 100V"
